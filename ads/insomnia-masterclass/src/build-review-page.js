@@ -80,7 +80,7 @@ const card=(a,c)=>{
   const toggle=SZ.map((s,i)=>`<button type="button" class="seg${i===1?' on':''}" data-sz="${s}">${SZLABEL[s]}</button>`).join('');
   const primary=fill(b.adPrimary);
   return `<article class="card">
-  <header class="card-hd"><span class="tag">${c.key}</span><h3>${e(c.name)}</h3><p class="surface">${e(c.surface)}</p></header>
+  <header class="card-hd"><span class="tag${c.photo ? ' tag-photo' : ''}">${c.key}</span><h3>${e(c.name)}${c.photo ? ' <span class="pill">with her photo</span>' : ''}</h3><p class="surface">${e(c.surface)}${c.sameCopyAs ? ` &#183; same words as ${c.sameCopyAs}` : ''}</p></header>
   <div class="card-body">
     <figure class="shots"><div class="stage">${imgs}</div><div class="seg-row" role="group" aria-label="Size">${toggle}</div></figure>
     <div class="fields">
@@ -188,6 +188,10 @@ h1,h2,h3{font-family:Syne,Georgia,serif;text-wrap:balance;margin:0;letter-spacin
   box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
 .card-hd{padding:16px 20px 14px;border-bottom:1px solid var(--line-soft);
   display:grid;grid-template-columns:auto 1fr;gap:0 12px;align-items:baseline}
+.tag-photo{background:var(--flag);color:var(--flag-ink)}
+.pill{display:inline-block;vertical-align:middle;margin-left:8px;background:var(--flag);color:var(--flag-ink);
+  border-radius:999px;padding:2px 10px;font-family:Outfit,sans-serif;font-weight:600;font-size:11px;
+  letter-spacing:.06em;text-transform:uppercase}
 .tag{grid-row:1/3;align-self:center;width:30px;height:30px;border-radius:7px;background:var(--accent);
   color:var(--accent-ink);font-family:Syne,serif;font-weight:800;font-size:14px;
   display:flex;align-items:center;justify-content:center}
@@ -239,11 +243,11 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 56px;
 
 <header class="hero"><div class="wrap">
   <span class="eyebrow">IntraBalance &#183; Facebook and Instagram</span>
-  <h1>Three audiences, not one.</h1>
-  <p class="lede">The June set spoke to physicians only. This adds nurse practitioners and psychologists, PAs and coaches as separate campaigns, each written to a different problem rather than the same ad with the job title swapped.</p>
+  <h1>Three audiences, with and without her face.</h1>
+  <p class="lede">The June set spoke to physicians only, and had no photo. This adds nurse practitioners and psychologists, PAs and coaches as separate campaigns, plus two versions carrying Dr. Bhopal's portrait. Each audience is written to a different problem, not the same ad with the job title swapped.</p>
   <dl class="stats">
-    <div class="stat"><dt>Ads ready</dt><dd>36</dd></div>
-    <div class="stat"><dt>Written versions</dt><dd>12<small>4 angles &#215; 3 audiences</small></dd></div>
+    <div class="stat"><dt>Ads ready</dt><dd>54</dd></div>
+    <div class="stat"><dt>Angles</dt><dd>6<small>4 typographic, 2 with her photo</small></dd></div>
     <div class="stat"><dt>Class date</dt><dd>Wed, Aug 26<small>five days out</small></dd></div>
     <div class="stat"><dt>Still blank</dt><dd>2<small>start time, sign-up link</small></dd></div>
   </dl>
@@ -253,9 +257,11 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 56px;
       <li><b>Go or no go for these ads?</b><span class="sub">Nothing is running. Nothing is scheduled. They sit in the brand repo until you say.</span></li>
       <li><b>What time does the class start, and what is the sign-up link?</b><span class="sub">Both are still blank. It has to be the masterclass sign-up page, not the enrollment page for the six-week program.</span></li>
       <li><b>Does the sign-up page offer credit to nurse practitioners and psychologists, or only to doctors?</b><span class="sub">The doctor ads say CME. The other two say CME or CE, which is how the credit is described everywhere else. Coaches may get neither, so those ads never lead with it. Whatever the page says is what the ads have to say.</span></li>
-      <li><b>Do you want the version with Nishi's face?</b><span class="sub">Still not built. The only photo we hold is 400 pixels square, too small for the layout that puts her alongside the headline. A larger one on a plain background unblocks it.</span></li>
+      <li><b>Which photo version do you want to run, if either?</b><span class="sub">Two are built and marked below. Each uses the same words as its no-photo twin, so running the pair tells you what her face is worth and nothing else.</span></li>
+      <li><b>Can you send a larger photo of her?</b><span class="sub">The one we hold is small. It is fine at the sizes used here, but too small for the layout that runs her photo down the side of the frame, which is the one the reference ads use.</span></li>
     </ol>
   </div>
+  <p class="note"><b>On the photo versions.</b> E and F carry her portrait. Each is the face version of an ad already in the set, word for word, so a head-to-head between them measures the photograph rather than the writing. That pairing is checked automatically, so it cannot drift.</p>
   <p class="note"><b>On the writing.</b> All twelve versions clear the voice standard we hold content to. The June ads do not, so their wording has been replaced rather than reused. The scarcity line "seats limited" is gone from every ad, and the checker now catches that phrase so it cannot come back in a later draft.</p>
 </div></header>
 
