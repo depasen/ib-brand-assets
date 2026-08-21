@@ -13,9 +13,11 @@ src/copy.js             THE source of truth. All copy lives here and nowhere els
 src/render_ads.js       HTML -> PNG renderer (Playwright + Chromium)
 src/build-copy-md.js    regenerates COPY.md from copy.js
 src/verify.js           pre-launch gate. Run before handing anything to Sandeep
+src/build-review-page.js  builds review.html - the page Sandeep looks at
 brand/                  logos + signature pattern
 fonts/                  Syne, Outfit, Figtree (the actual brand fonts)
 out/<audience>/         the rendered PNGs
+review.html             generated, gitignored - all 36 ads plus copy on one page
 ```
 
 ## Quick start
@@ -24,10 +26,11 @@ out/<audience>/         the rendered PNGs
 npm install
 node src/render_ads.js      # all 36
 node src/build-copy-md.js   # regenerate COPY.md
+node src/build-review-page.js  # rebuild the review page
 node src/verify.js          # gate: renders, voice, scope of practice, credit claims
 ```
 
-Or `npm run build` for all three. Every script resolves its own location, so it
+Or `npm run build` for all four. Every script resolves its own location, so it
 runs from anywhere.
 
 Render one lane or one concept while iterating:
@@ -36,6 +39,18 @@ Render one lane or one concept while iterating:
 node src/render_ads.js --audience allied
 node src/render_ads.js --concept B
 ```
+
+## The review page
+
+`node src/build-review-page.js` writes `review.html`: every ad with its post copy
+beside it, a size toggle per ad, and the open decisions isolated at the top. It is
+self-contained — thumbnails and the brand fonts are inlined, so it renders with no
+network and cannot fall back to a system serif.
+
+Published (private) at
+<https://claude.ai/code/artifact/c4a8c6b7-0f08-4e9b-8b55-e90250735e79>. Regenerate
+and republish to that same URL whenever the copy changes; a new URL is a second
+version of the truth.
 
 ## The three audiences
 

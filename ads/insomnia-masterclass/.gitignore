@@ -1,0 +1,5 @@
+# Generated in ~10s by `node src/build-review-page.js` from copy.js + out/.
+# Not committed: 1.9 MB of inlined thumbnails and fonts that would go stale the
+# moment the copy changed. The live copy is the artifact linked in README.md.
+review.html
+node_modules/

@@ -6,7 +6,8 @@
     "render": "node src/render_ads.js",
     "copy": "node src/build-copy-md.js",
     "verify": "node src/verify.js",
-    "build": "node src/render_ads.js && node src/build-copy-md.js && node src/verify.js"
+    "review": "node src/build-review-page.js",
+    "build": "node src/render_ads.js && node src/build-copy-md.js && node src/build-review-page.js && node src/verify.js"
   },
   "dependencies": {
     "playwright": "^1.56.1"
