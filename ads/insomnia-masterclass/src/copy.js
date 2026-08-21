@@ -19,7 +19,11 @@ const OFFER = {
   dateShort: 'Wed, Aug 26',
   time: '4:00 PM',                      // confirmed by Sandeep 2026-08-21
   tz: 'PT',
-  regUrl: '[ADD REGISTRATION URL]',     // masterclass opt-in page, NOT intrabalance.com/register
+  // Confirmed by Sandeep 2026-08-21. The clinician masterclass opt-in.
+  // NOT intrabalance.com/register (six-week program enrollment) and NOT
+  // members.intrabalance.com/sleep-masterclass (the consumer "quiet your mind" class,
+  // which is the most common masterclass URL in the corpus and the easy wrong answer).
+  regUrl: 'https://members.intrabalance.com/insomnia',
   host: 'Dr. Nishi Bhopal, MD',
   // Corpus-verified credentials. Formal string per VOICE-GUIDE section 4 is
   // "ABPN Board Certified in Psychiatry & Sleep Medicine" (20 corpus hits).

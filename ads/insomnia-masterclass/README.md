@@ -179,32 +179,30 @@ and failed the gate outright on em-dash rate.
   ("do you struggle to sleep") — these target clinicians about the people they care
   for. Only claim the credit that the landing page actually offers each profession.
 
-## Credit is switched OFF
+## There is no CME or CE — settled
 
 `OFFER.creditClaim` is `'off'`, so **no ad mentions CME, CE or credit anywhere** —
 not on the image, not in the ad fields.
 
-The June kit claimed "CME available" on every ad. Asked to confirm what credit the
-landing page offers each profession, Sandeep replied *"Credit for what?"*, so the
-claim has no verified source. A credit claim in advertising aimed at licensed
-clinicians is a regulated statement; an unverified one does not go out on a deadline.
+The June ad kit's brief specified "CME available" on every ad, and that brief was the
+only source for it. Sandeep, asked twice, 2026-08-21: *"Credit for what?"* There is
+none. This is closed, not pending — do not put it back because a document says so.
+`verify.js` enforces it: with the switch off, any surviving mention of credit fails
+the build.
 
-Turning it back on is one word. Set `creditClaim: 'on'` and re-render — each lane
-already carries the wording it would use (physicians: CME, the other two: CME/CE,
-which is how the corpus describes Learner+ credit for mixed audiences).
-`verify.js` enforces the switch in both directions: with it off, any surviving
-mention of credit fails the build.
+If credit is ever actually arranged, `creditClaim: 'on'` restores it and each lane
+already carries the wording it would use.
+
+## The registration URL
+
+`https://members.intrabalance.com/insomnia` — confirmed 2026-08-21.
+
+Two wrong ones to keep out: `intrabalance.com/register` is six-week program
+enrollment, and `members.intrabalance.com/sleep-masterclass` is the **consumer**
+"quiet your mind" class. That second one appears 39 times in the corpus, which makes
+it the easy wrong answer.
 
 ## Still open
-
-1. **One launch blank: the registration URL.** `OFFER.regUrl` in `src/copy.js`. It
-   must be the **clinician** masterclass opt-in page. Two wrong candidates to avoid:
-   `intrabalance.com/register` is CSK enrollment, and
-   `members.intrabalance.com/sleep-masterclass` — the most common masterclass URL in
-   the corpus, 39 hits — is the **consumer** masterclass ("quiet your mind and sleep
-   through the night"), not this one. The live URL is in Meta Ads Manager, which this
-   session has no access to.
-2. **Whether any credit exists at all.** See above.
 3. **The two photo formats that need assets we do not have.**
    - *Split with a clinician photo.* Needs a **licensed stock photo of a clinician**
      — the reference uses a model in scrubs, not the instructor, so this is a stock

@@ -15,7 +15,7 @@ which run their parent concept's exact words so the A/B measures the photograph 
 | Date | Wednesday, Aug 26 (verified: 2026-08-26 is a Wednesday) |
 | Time | `4:00 PM` **fill before launch** |
 | Host | Dr. Nishi Bhopal, MD, board certified in psychiatry and sleep medicine |
-| Registration URL | `[ADD REGISTRATION URL]` **fill before launch** — the masterclass opt-in page, NOT intrabalance.com/register |
+| Registration URL | `https://members.intrabalance.com/insomnia` **fill before launch** — the masterclass opt-in page, NOT intrabalance.com/register |
 
 ## Audiences
 
@@ -50,7 +50,7 @@ Insomnia is one of the most common complaints you'll see this week, and one of t
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Out of Answers for the Patients Who Can't Sleep?
@@ -84,7 +84,7 @@ When a patient says "I can't sleep", most of us reach for a script, because that
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
@@ -114,7 +114,7 @@ Some patients you can help in a single visit. The ones who can't sleep usually a
 
 This free masterclass changes that. Built for physicians, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still Writing Scripts for the Patients Who Can't Sleep?
@@ -144,7 +144,7 @@ We work up chest pain. We work up fatigue. But when a patient says "I can't slee
 
 Insomnia may be the one complaint we treat without diagnosing. This free masterclass, for physicians, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The One Complaint We Treat Without Diagnosing
@@ -178,7 +178,7 @@ When a patient says "I can't sleep", most of us reach for a script, because that
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
@@ -212,7 +212,7 @@ Insomnia is one of the most common complaints you'll see this week, and one of t
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Out of Answers for the Patients Who Can't Sleep?
@@ -248,7 +248,7 @@ When a patient says "I can't sleep", most of us reach for a script, because that
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
@@ -284,7 +284,7 @@ And then you're the one holding it, with the same short list of options as every
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Sleep Complaint Your Program Had the Least Time For
@@ -318,7 +318,7 @@ You have the longest visit, the most trust, and the same short list of options a
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
@@ -348,7 +348,7 @@ Some visits close cleanly. The sleep ones rarely do, and it isn't for lack of ti
 
 This free masterclass changes that. Built for nurse practitioners, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still Reaching for the Same Short List on Sleep?
@@ -378,7 +378,7 @@ We work up the fatigue. We work up the thyroid. But when someone says "I can't s
 
 Insomnia may be the one complaint we hear most and work up least. This free masterclass, for nurse practitioners, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Complaint We Hear Most, and Work Up Least
@@ -412,7 +412,7 @@ You have the longest visit, the most trust, and the same short list of options a
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
@@ -446,7 +446,7 @@ And then you're the one holding it, with the same short list of options as every
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Sleep Complaint Your Program Had the Least Time For
@@ -482,7 +482,7 @@ You have the longest visit, the most trust, and the same short list of options a
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
@@ -518,7 +518,7 @@ You're who they land with, and often without a prescription pad to fall back on.
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** They've Already Tried the Pill. Now What?
@@ -552,7 +552,7 @@ Psychologists, PAs and coaches end up holding the sleep problem once the handout
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
@@ -582,7 +582,7 @@ Most things people bring you, you have a way in. Sleep is often the exception, a
 
 This free masterclass changes that. Built for psychologists, PAs and coaches, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still the Last Stop for the Sleep Nobody Fixed?
@@ -612,7 +612,7 @@ Everyone has a fix for sleep. The handout, the pill, the app, the advice about s
 
 Almost nobody asked why they weren't sleeping in the first place. This free masterclass, for psychologists, PAs and coaches, starts there instead. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Everyone Has a Fix for Sleep. Almost Nobody Asks Why.
@@ -646,7 +646,7 @@ Psychologists, PAs and coaches end up holding the sleep problem once the handout
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
@@ -680,7 +680,7 @@ You're who they land with, and often without a prescription pad to fall back on.
 
 Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** They've Already Tried the Pill. Now What?
@@ -716,7 +716,7 @@ Psychologists, PAs and coaches end up holding the sleep problem once the handout
 
 In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
 
-🗓 Wed, Aug 26 · 4:00 PM PT → [ADD REGISTRATION URL]
+🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
