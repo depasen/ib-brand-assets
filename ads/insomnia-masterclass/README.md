@@ -4,8 +4,8 @@ Facebook and Instagram ads for the free Insomnia Masterclass, built for **three
 clinician audiences**: physicians, nurse practitioners, and psychologists / PAs /
 coaches.
 
-**63 ads: 3 audiences × 7 concepts × 3 sizes.** Four concepts are typographic, three
-are photo cuts carrying Dr. Bhopal's portrait. Copy, renderer and rendered PNGs all
+**72 ads: 3 audiences × 8 concepts × 3 sizes.** Four are typographic, three carry
+Dr. Bhopal's portrait, and one carries a clinician photograph. Copy, renderer and rendered PNGs all
 live here.
 
 ```
@@ -25,7 +25,7 @@ review.html             generated, gitignored - all 36 ads plus copy on one page
 
 ```bash
 npm install
-node src/render_ads.js      # all 63
+node src/render_ads.js      # all 72
 node src/build-copy-md.js   # regenerate COPY.md
 node src/build-review-page.js  # rebuild the review page
 node src/verify.js          # gate: renders, voice, scope of practice, credit claims
@@ -71,6 +71,22 @@ and *treat* are all out of it — "clients" because `VOICE-GUIDE.md` §4 bans it
 voice, the rest because they are outside a coach's scope. `src/verify.js` enforces
 this mechanically; it is not left to whoever edits next remembering.
 
+## The clinician photographs
+
+`brand/photo-physicians.png`, `photo-nps.png`, `photo-allied.png` drive concept H.
+They were **generated on 2026-08-21** with `gemini-3-pro-image` via
+`brand-content-images`, from the IntraBalance style written for that repo. They are
+generic clinicians, deliberately: the reference ad this format copies uses a model,
+not the instructor.
+
+Two things follow from them being generated:
+
+- **They are synthetic, and of nobody.** That is fine for a stock-style clinician and
+  is the reason a photograph of Dr. Bhopal was never generated — a synthetic image of
+  a real, named person is a different thing entirely and is not done here.
+- **Check them before they run.** Generated images can carry small artefacts that
+  survive a glance. Look at each at full size once.
+
 ## The photo cuts (E and F)
 
 Two of the six concepts carry her portrait. Each is the **face version of an existing
@@ -82,6 +98,7 @@ photograph and nothing else:
 | E — Quote card with portrait | B | White ground, small portrait beside her name, navy CTA bar |
 | F — Speaker card | A | Navy ground, large centred portrait above the headline |
 | G — Native post | B | White card styled as a post, not an ad. Plain-sans headline, navy CTA bar |
+| H — Clinician split | C | Full-bleed clinician photo one side, headline on a pale scrim |
 
 B, E and G run the **same words in three treatments**, so that trio is a clean test of
 presentation with copy held constant.
@@ -218,12 +235,10 @@ enrollment, and `members.intrabalance.com/sleep-masterclass` is the **consumer**
 it the easy wrong answer.
 
 ## Still open
-3. **The two photo formats that need assets we do not have.**
-   - *Split with a clinician photo.* Needs a **licensed stock photo of a clinician**
-     — the reference uses a model in scrubs, not the instructor, so this is a stock
-     purchase rather than a photoshoot.
-   - *Full-bleed environmental portrait.* Needs a **wide photo of Dr. Bhopal in a
-     real setting**, roughly 1200px or more. The 350px circular headshot cannot do it.
+3. **Full-bleed environmental portrait** (the MasterClass pull-quote format) is still
+   not built. It needs a **wide photograph of Dr. Bhopal in a real setting**, roughly
+   1200px or more. The 350px circular headshot cannot carry it, and generating a
+   stand-in is not an option — it would be a synthetic image of a real, named person.
 
    `brand-content-images` is the right tool for this and it is already built and
    shared across the three businesses. Two things stand between it and these images:

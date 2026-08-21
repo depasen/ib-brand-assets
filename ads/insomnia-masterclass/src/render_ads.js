@@ -222,7 +222,40 @@ function G_nativepost(c) {
   };
 }
 
-const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard, G: G_nativepost };
+
+// H - clinician split. Modelled on Psychiatry Redefined's "Scholarships Available".
+// The photo is a real image with a subject in it, so two things drive the layout:
+//   - The type column sits on the side the subject ISN'T, per c.textSide.
+//   - A scrim fades from the type side across the photo rather than a hard edge, so
+//     the headline always has something to sit on even where the photo is busy.
+// On 9:16 the split goes horizontal instead: a 1080-wide source upscales 1.27x for a
+// full-width band but 1.5x for a half-width column, and the face is the first thing
+// to soften. Portrait sources are ~848x1264.
+function H_splitphoto(c, size) {
+  const stacked = size.h / size.w > 1.5;          // 9:16 only
+  const left = c.textSide === 'left';
+  const img = asset(c.photoFile);
+  const photo = stacked
+    ? `<div style="position:absolute;top:0;left:0;right:0;height:42%;background:url('${img}') center 18%/cover no-repeat;"></div>
+       <div style="position:absolute;top:0;left:0;right:0;height:42%;background:linear-gradient(to bottom, rgba(238,255,255,0) 58%, ${LACC} 98%);"></div>`
+    : `<div style="position:absolute;top:0;bottom:0;${left ? 'right' : 'left'}:0;width:56%;background:url('${img}') center/cover no-repeat;"></div>
+       <div style="position:absolute;top:0;bottom:0;${left ? 'right' : 'left'}:0;width:56%;background:linear-gradient(to ${left ? 'left' : 'right'}, rgba(238,255,255,0) 38%, ${LACC} 96%);"></div>`;
+  return {
+    bg: LACC, color: NAVY, pad: 74,
+    pattern: photo,
+    stageStyle: stacked
+      ? `top:42%;left:0;right:0;bottom:0;`
+      : `top:0;bottom:0;${left ? 'left' : 'right'}:0;width:52%;`,
+    body: `
+      <img src="${asset('logo_color.png')}" style="height:${u(50)};width:auto;align-self:flex-start;">
+      <div data-fit-line style="font-family:'Outfit';font-weight:600;letter-spacing:0.13em;font-size:${u(22)};margin-top:${u(30)};white-space:nowrap;">${esc(c.eyebrow)}</div>
+      <div style="font-family:'Syne';font-weight:800;line-height:1.06;text-wrap:balance;font-size:${u(52)};letter-spacing:-0.5px;margin-top:${u(18)};text-transform:uppercase;" data-fit-wrap>${esc(c.h.lead)} <span style="color:${TEAL};">${esc(c.h.accent)}</span></div>
+      <div style="font-family:'Figtree';font-weight:500;font-size:${u(28)};line-height:1.42;color:${SUB_LIGHT};margin-top:${u(22)};">${esc(c.sub)}</div>
+      <div style="font-family:'Figtree';font-size:${u(28)};line-height:1.4;margin-top:${u(26)};"><b style="font-weight:800;">${esc(c.button)}</b><br>${esc(c.strip)}</div>`,
+  };
+}
+
+const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard, G: G_nativepost, H: H_splitphoto };
 
 // Deep-fills every {{TOKEN}} in a concept block.
 function filled(block, lane) {
@@ -237,7 +270,7 @@ function document_(spec, size) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>
 *{margin:0;padding:0;box-sizing:border-box;}
 #frame{--u:${size.s}px;width:${size.w}px;height:${size.h}px;background:${spec.bg};position:relative;overflow:hidden;font-family:'Figtree',sans-serif;color:${spec.color};}
-#stage{position:absolute;top:0;left:0;right:0;bottom:${footer};padding:${u(spec.pad)};display:flex;flex-direction:column;justify-content:center;}
+#stage{position:absolute;${spec.stageStyle || `top:0;left:0;right:0;bottom:${footer};`}padding:${u(spec.pad)};display:flex;flex-direction:column;justify-content:center;}
 #content{display:flex;flex-direction:column;min-width:0;}
 ${FONTCSS}
 </style></head><body>
@@ -297,7 +330,20 @@ const FIT = () => {
   const content = document.getElementById('content');
   const report = { shrunkLines: [], u0: parseFloat(getComputedStyle(frame).getPropertyValue('--u')), u1: null, overflow: false };
 
-  // 1. single-line items shrink to their own width before anything global moves.
+  // 1a. wrapped blocks: shrink until the longest word fits the column. Without this
+  // a narrow column either overflows or, with overflow-wrap:break-word, hyphenates a
+  // headline mid-word - "STILL PRESCR / IBING FOR" shipped that way once.
+  for (const el of document.querySelectorAll('[data-fit-wrap]')) {
+    const base = parseFloat(getComputedStyle(el).fontSize);
+    let f = base;
+    while (el.scrollWidth > el.clientWidth + 1 && f > base * 0.6) {
+      f -= base * 0.02;
+      el.style.fontSize = f + 'px';
+    }
+    if (f < base - 0.01) report.shrunkLines.push({ text: el.textContent.trim().slice(0, 28), pct: Math.round(f / base * 100) });
+  }
+
+  // 1b. single-line items shrink to their own width before anything global moves.
   for (const el of document.querySelectorAll('[data-fit-line]')) {
     const base = parseFloat(getComputedStyle(el).fontSize);
     let f = base;
@@ -374,7 +420,7 @@ async function launchChromium() {
         // artboard renders in a fallback serif with broken-image glyphs. It still
         // screenshots cleanly, which is exactly what makes it dangerous.
         const tmp = path.join(ROOT, `.render-tmp-${aud.key}-${con.slug}-${size.key}.html`);
-        fs.writeFileSync(tmp, document_(RENDERERS[con.key](block), size));
+        fs.writeFileSync(tmp, document_(RENDERERS[con.key](block, size), size));
         try {
           await page.goto('file://' + tmp, { waitUntil: 'load' });
           await page.evaluate(async () => { try { await document.fonts.ready; } catch (e) {} });

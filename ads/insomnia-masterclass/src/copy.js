@@ -378,6 +378,12 @@ const CONCEPTS = [
   // ONE THING FROM THAT REFERENCE IS DELIBERATELY NOT COPIED: it bakes a fake
   // engagement row into the image ("Nina and 231 others - 67 comments"). That is
   // invented social proof presented as real. See README "A judgement call".
+  // H is the layout Sandeep pointed at: Psychiatry Redefined's "Scholarships
+  // Available" in the Ad Inspiration folder. Full-bleed clinician photo down one side,
+  // type over a pale scrim on the other, a big hook, CTA as a line rather than a
+  // button. Its subject is a clinician, NOT the instructor, which is why this needed a
+  // photograph rather than a bigger headshot of Dr. Bhopal.
+  { key: 'H', slug: 'H_splitphoto',    name: 'Clinician split',          surface: 'Full-bleed clinician photo one side, headline on a pale scrim', photo: true, sameCopyAs: 'C' },
   { key: 'G', slug: 'G_nativepost',     name: 'Native post',              surface: 'White card, portrait and byline, plain-sans headline, navy CTA bar', photo: true, sameCopyAs: 'B' },
 ];
 
@@ -392,6 +398,14 @@ const SIZES = [
 for (const a of AUDIENCES) {
   a.E = { ...a.B, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
   a.F = { ...a.A, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
+  a.H = { ...a.C, photoFile: 'photo-' + a.key + '.png',
+          // C's eyebrow names the audience and runs to 59 characters, which cannot fit
+          // a half-width column at a readable size - it shrank to 54% and still
+          // overflowed. H's sub already names the audience, so the eyebrow is short.
+          eyebrow: 'FREE LIVE MASTERCLASS',
+          // Subject sits on the RIGHT of the physicians and allied frames and on the
+          // LEFT of the NP frame, so the type column swaps side to stay off the face.
+          textSide: a.key === 'nps' ? 'right' : 'left' };
   a.G = { ...a.B, portraitName: OFFER.host, portraitCred: 'Sleep specialist and psychiatrist',
           offerLine: { lead: 'Free ', bold: 'Insomnia Masterclass for ' + a.noun + '.', tail: ' ' + OFFER.dateLong } };
 }
