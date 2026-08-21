@@ -246,8 +246,8 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 56px;
   <h1>Three audiences, with and without her face.</h1>
   <p class="lede">The June set spoke to physicians only, and had no photo. This adds nurse practitioners and psychologists, PAs and coaches as separate campaigns, plus two versions carrying Dr. Bhopal's portrait. Each audience is written to a different problem, not the same ad with the job title swapped.</p>
   <dl class="stats">
-    <div class="stat"><dt>Ads ready</dt><dd>54</dd></div>
-    <div class="stat"><dt>Angles</dt><dd>6<small>4 typographic, 2 with her photo</small></dd></div>
+    <div class="stat"><dt>Ads ready</dt><dd>63</dd></div>
+    <div class="stat"><dt>Angles</dt><dd>7<small>4 typographic, 3 with her photo</small></dd></div>
     <div class="stat"><dt>Class date</dt><dd>Wed, Aug 26<small>five days out</small></dd></div>
     <div class="stat"><dt>Still blank</dt><dd>2<small>start time, sign-up link</small></dd></div>
   </dl>
@@ -261,7 +261,9 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 56px;
       <li><b>Can you send a larger photo of her?</b><span class="sub">The one we hold is small. It is fine at the sizes used here, but too small for the layout that runs her photo down the side of the frame, which is the one the reference ads use.</span></li>
     </ol>
   </div>
-  <p class="note"><b>On the photo versions.</b> E and F carry her portrait. Each is the face version of an ad already in the set, word for word, so a head-to-head between them measures the photograph rather than the writing. That pairing is checked automatically, so it cannot drift.</p>
+  <p class="note"><b>From your inspiration folder.</b> Three photo formats keep showing up in the ads you saved. One of them I could build today and it is here as G, copied from the eCare ad. The other two need a photo we do not have: one wants a stock picture of a clinician, the other wants a wide shot of you in a real room. Worth knowing: eCare is running a free insomnia webinar with Colleen Carney on <b>August 27th</b>, the day after yours, aimed at the same mental health professionals as our third campaign.</p>
+  <p class="note"><b>One thing I did not copy.</b> The eCare picture has a fake row of likes and comments printed into it, so the ad looks like a post 231 people already liked. I left that out. Say the word if you want it.</p>
+  <p class="note"><b>On the photo versions.</b> E, F and G carry her portrait. Each is the face version of an ad already in the set, word for word, so a head-to-head between them measures the photograph rather than the writing. That pairing is checked automatically, so it cannot drift.</p>
   <p class="note"><b>On the writing.</b> All twelve versions clear the voice standard we hold content to. The June ads do not, so their wording has been replaced rather than reused. The scarcity line "seats limited" is gone from every ad, and the checker now catches that phrase so it cannot come back in a later draft.</p>
 </div></header>
 
