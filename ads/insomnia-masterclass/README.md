@@ -4,8 +4,9 @@ Facebook and Instagram ads for the free Insomnia Masterclass, built for **three
 clinician audiences**: physicians, nurse practitioners, and psychologists / PAs /
 coaches.
 
-**36 ads: 3 audiences × 4 concepts × 3 sizes.** Copy, renderer and rendered PNGs
-all live here.
+**54 ads: 3 audiences × 6 concepts × 3 sizes.** Four concepts are typographic, two
+are photo cuts carrying Dr. Bhopal's portrait. Copy, renderer and rendered PNGs all
+live here.
 
 ```
 COPY.md                 every ad's copy, generated - review this one
@@ -14,7 +15,7 @@ src/render_ads.js       HTML -> PNG renderer (Playwright + Chromium)
 src/build-copy-md.js    regenerates COPY.md from copy.js
 src/verify.js           pre-launch gate. Run before handing anything to Sandeep
 src/build-review-page.js  builds review.html - the page Sandeep looks at
-brand/                  logos + signature pattern
+brand/                  logos, signature pattern, bhopal.jpg (the portrait)
 fonts/                  Syne, Outfit, Figtree (the actual brand fonts)
 out/<audience>/         the rendered PNGs
 review.html             generated, gitignored - all 36 ads plus copy on one page
@@ -24,7 +25,7 @@ review.html             generated, gitignored - all 36 ads plus copy on one page
 
 ```bash
 npm install
-node src/render_ads.js      # all 36
+node src/render_ads.js      # all 54
 node src/build-copy-md.js   # regenerate COPY.md
 node src/build-review-page.js  # rebuild the review page
 node src/verify.js          # gate: renders, voice, scope of practice, credit claims
@@ -69,6 +70,28 @@ lane may hinge on writing a script, and the words *patients*, *clients*, *diagno
 and *treat* are all out of it — "clients" because `VOICE-GUIDE.md` §4 bans it in her
 voice, the rest because they are outside a coach's scope. `src/verify.js` enforces
 this mechanically; it is not left to whoever edits next remembering.
+
+## The photo cuts (E and F)
+
+Two of the six concepts carry her portrait. Each is the **face version of an existing
+concept, running that concept's exact words**, so an A/B between them measures the
+photograph and nothing else:
+
+| Photo cut | Same copy as | Look |
+|---|---|---|
+| E — Quote card with portrait | B | White ground, small portrait beside her name, navy CTA bar |
+| F — Speaker card | A | Navy ground, large centred portrait above the headline |
+
+The pairing is enforced: `src/verify.js` fails if anyone edits E's or F's copy away
+from its parent, because a contaminated A/B is worse than no A/B — it still returns a
+number and the number means something else.
+
+**The portrait is the constraint.** `brand/bhopal.jpg` is 400×400, but the circle sits
+inset 25px on every side, so the real portrait is **350px across** and the outer 6.3%
+is black matte. The renderer scales it 1.16× inside a circular mask to crop the matte;
+without that there is a dark halo inside the ring, which is what the first render did.
+350px is the ceiling: F draws it at 300px and that is about as large as it can go
+before it softens.
 
 ## The copy rules that shaped this
 
@@ -130,11 +153,13 @@ and failed the gate outright on em-dash rate.
    CME/CE, which matches how the corpus describes Learner+ credit. Coaches may
    qualify for neither, which is why credit is never the lead promise in that lane.
    This must match the landing page before launch.
-3. **Photo cuts (face vs no-face A/B).** Still not built. The only headshot of
-   Dr. Bhopal in this repo, `ib-headshot-nishi-bhopal-md-hhh8l.jpg`, is **400×400** —
-   enough for a circular headshot in the quote card at 1:1, not enough for the split
-   layout, which needs roughly 490×1350 on the 4:5. A ≥1200px headshot on a light
-   background unblocks both layouts.
+3. **The split-photo layout.** Not built, and blocked on resolution. It puts the
+   photo down the right ~45% of the frame, which needs roughly 490×1350 on the 4:5;
+   the usable portrait is 350px across. A ≥1200px photo of Dr. Bhopal on a light or
+   neutral background unblocks it, and would also let F draw the portrait larger.
+
+   The 5.7 MB file in Drive named `Nishi Bhopal_DL.jpg` is **not** a headshot — it is
+   a scan of her driver's licence. Do not use it, and do not copy it into any repo.
 4. **1.91:1 (1200×628)** for link and right-column placements is not rendered. The
    four concepts are vertically-centred columns; at 628px tall they need a genuine
    horizontal layout, not a scale factor.
@@ -147,6 +172,10 @@ refuses every `file://` subresource, so the logo, the pattern and all three font
 silently. The artboard still screenshots cleanly, in a fallback serif with
 broken-image glyphs. `assertHealthy()` now fails the run if any image, background or
 font did not actually apply.
+
+**A portrait matte nobody measured.** The first photo render had a dark halo inside
+the ring because the source circle is inset in its square. The fix came from measuring
+the inset in the actual pixels, not from nudging a scale factor until it looked right.
 
 **Copy that outgrew its box.** The June renderer used a per-size scale factor tuned by
 eye against one audience's copy. "For Psychologists, PAs & Coaches" is more than twice

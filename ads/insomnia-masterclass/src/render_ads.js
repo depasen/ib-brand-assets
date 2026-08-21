@@ -130,7 +130,65 @@ function D_statement(c) { // dark hot take, navy ground
   };
 }
 
-const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement };
+
+// The portrait. MEASURED, not assumed: the source is 400x400 with the circle inset
+// 25px on every side, so the real portrait is 350px across and the outer 6.3% is
+// black matte. A plain border-radius:50% crop therefore leaves a dark halo inside
+// the ring, which is what it did on the first render. Scaling to 400/350 = 1.143
+// (1.16 for margin) pushes the matte outside the crop.
+// 350px is the hard ceiling on portrait resolution - see README "Still open".
+const PORTRAIT_SCALE = 1.16;
+function portrait(px, ring) {
+  const over = ((PORTRAIT_SCALE - 1) / 2 * 100).toFixed(2);
+  return `<span style="display:block;flex:none;width:${u(px)};height:${u(px)};border-radius:50%;overflow:hidden;border:${u(5)} solid ${ring};background:${WHITE};">
+    <img src="${asset('bhopal.jpg')}" alt="" style="width:${PORTRAIT_SCALE * 100}%;height:${PORTRAIT_SCALE * 100}%;margin:-${over}% 0 0 -${over}%;object-fit:cover;display:block;">
+  </span>`;
+}
+
+function E_quotecard_photo(c) { // B, with her face instead of a typed credential
+  return {
+    bg: WHITE, color: NAVY, pad: 76, footer: 150,
+    pattern: `<div style="position:absolute;top:0;left:0;right:0;height:${u(14)};background:${TEAL};"></div>`,
+    body: `
+      <img src="${asset('logo_color.png')}" style="height:${u(52)};width:auto;align-self:flex-start;">
+      <div style="display:flex;align-items:center;gap:${u(26)};margin-top:${u(38)};">
+        ${portrait(148, TEAL)}
+        <div style="min-width:0;">
+          <div style="font-family:'Syne';font-weight:700;font-size:${u(32)};">${esc(c.portraitName)}</div>
+          <div style="font-family:'Outfit';font-weight:500;font-size:${u(24)};color:${SUB_WHITE};margin-top:${u(5)};">${esc(c.portraitCred)}</div>
+        </div>
+      </div>
+      <div style="font-family:'Syne';font-weight:600;line-height:1.18;text-wrap:balance;font-size:${u(62)};letter-spacing:-0.3px;margin-top:${u(34)};">${esc(c.h.lead)} <span style="text-decoration:underline;text-decoration-color:${TEAL};text-decoration-thickness:${u(7)};text-underline-offset:${u(12)};">${esc(c.h.accent)}</span></div>
+      <div style="font-family:'Figtree';font-weight:500;font-size:${u(33)};line-height:1.5;color:${SUB_WHITE};margin-top:${u(30)};max-width:94%;">${esc(c.sub)}</div>
+      <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:${u(14)};background:${LACC};border:2px solid ${LBLUE};border-radius:999px;padding:${u(15)} ${u(26)};margin-top:${u(36)};">
+        <span style="flex:none;width:${u(12)};height:${u(12)};border-radius:50%;background:${TEAL};"></span>
+        <span data-fit-line style="font-family:'Outfit';font-weight:600;font-size:${u(25)};white-space:nowrap;">${esc(c.chip)}</span></div>`,
+    footerHtml: `<div style="position:absolute;left:0;right:0;bottom:0;height:${u(150)};background:${NAVY};display:flex;align-items:center;justify-content:space-between;padding:0 ${u(56)};">
+        <span style="background:${TEAL};color:${NAVY};font-family:'Syne';font-weight:700;font-size:${u(33)};padding:${u(19)} ${u(40)};border-radius:6px;white-space:nowrap;">${esc(c.button)} ${arrow}</span>
+        <img src="${asset('logo_white.png')}" style="height:${u(44)};width:auto;"></div>`,
+  };
+}
+
+function F_speakercard(c) { // A's words as a webinar speaker announcement, face-led
+  return {
+    bg: NAVY, color: LACC, pad: 78,
+    pattern: `<div style="position:absolute;inset:0;background:url('${asset('pattern_teal.png')}') center/cover no-repeat;opacity:0.42;"></div>`,
+    body: `
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center;">
+        <img src="${asset('logo_white.png')}" style="height:${u(50)};width:auto;">
+        <div data-fit-line style="font-family:'Outfit';font-weight:600;letter-spacing:0.16em;font-size:${u(23)};color:${TEAL};margin-top:${u(34)};white-space:nowrap;">${esc(c.eyebrow)}</div>
+        ${(() => `<div style="margin-top:${u(30)};">${portrait(300, TEAL)}</div>`)()}
+        <div style="font-family:'Syne';font-weight:700;font-size:${u(31)};margin-top:${u(22)};">${esc(c.portraitName)}</div>
+        <div data-fit-line style="font-family:'Outfit';font-weight:500;font-size:${u(23)};color:${LBLUE};margin-top:${u(5)};white-space:nowrap;">${esc(c.portraitCred)}</div>
+        <div style="font-family:'Syne';font-weight:700;line-height:1.12;text-wrap:balance;font-size:${u(66)};letter-spacing:-0.5px;margin-top:${u(32)};">${esc(c.h.lead)} <span style="color:${TEAL};">${esc(c.h.accent)}</span></div>
+        <div style="font-family:'Figtree';font-weight:500;font-size:${u(30)};line-height:1.44;color:${LBLUE};margin-top:${u(24)};max-width:88%;">${esc(c.sub)}</div>
+        <div data-fit-line style="font-family:'Outfit';font-weight:600;font-size:${u(26)};color:${WHITE};margin-top:${u(26)};white-space:nowrap;">${esc(c.checks[2].replace(/\*\*/g, ''))}</div>
+        <span style="background:${TEAL};color:${NAVY};font-family:'Syne';font-weight:700;font-size:${u(34)};padding:${u(22)} ${u(46)};border-radius:6px;margin-top:${u(28)};white-space:nowrap;">${esc(c.button)} ${arrow}</span>
+      </div>`,
+  };
+}
+
+const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard };
 
 // Deep-fills every {{TOKEN}} in a concept block.
 function filled(block) {

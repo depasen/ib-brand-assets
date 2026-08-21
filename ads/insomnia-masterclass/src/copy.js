@@ -321,6 +321,12 @@ const CONCEPTS = [
   { key: 'B', slug: 'B_quotecard',   name: 'Expert quote card', surface: 'White background, navy CTA bar' },
   { key: 'C', slug: 'C_bigquestion', name: 'Bold question',     surface: 'Light blue background' },
   { key: 'D', slug: 'D_statement',   name: 'Dark hot take',     surface: 'Navy background' },
+  // The two photo cuts. Each is a FACE VERSION OF AN EXISTING CONCEPT, running the
+  // identical words, so the A/B measures the photograph and nothing else. Change the
+  // copy in A or B and these change with it - that is the point, and why they carry
+  // `sameCopyAs` instead of their own text.
+  { key: 'E', slug: 'E_quotecard_photo', name: 'Quote card with portrait', surface: 'White background, circular portrait, navy CTA bar', photo: true, sameCopyAs: 'B' },
+  { key: 'F', slug: 'F_speakercard',     name: 'Speaker card',             surface: 'Navy background, portrait above the headline', photo: true, sameCopyAs: 'A' },
 ];
 
 const SIZES = [
@@ -328,5 +334,12 @@ const SIZES = [
   { key: '4x5_1080x1350',  w: 1080, h: 1350, s: 1.0,  placement: 'Facebook & Instagram Feed (primary)' },
   { key: '9x16_1080x1920', w: 1080, h: 1920, s: 1.06, placement: 'Stories & Reels (FB + IG)' },
 ];
+
+// Derive the photo cuts. Nothing here invents copy: E is B's words and F is A's,
+// with only the presentational fields the photo layout needs added on top.
+for (const a of AUDIENCES) {
+  a.E = { ...a.B, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
+  a.F = { ...a.A, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
+}
 
 module.exports = { OFFER, AUDIENCES, CONCEPTS, SIZES, fill };

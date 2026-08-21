@@ -80,7 +80,27 @@ for (const c of CONCEPTS) {
 }
 notes.push(`allied scope-of-practice: ${scanned} copy fields scanned`);
 
-// 5. credit claim consistency: a lane must not promise credit its label omits
+// 5. the photo cuts must run their parent concept's EXACT words. The whole point of
+//    E and F is an A/B that isolates the photograph; if someone edits one of them
+//    directly, the test silently starts measuring copy instead and the result is
+//    worse than no test, because it looks like an answer.
+let paired = 0;
+for (const con of CONCEPTS.filter((c) => c.sameCopyAs)) {
+  for (const a of AUDIENCES) {
+    paired++;
+    for (const f of ['adPrimary', 'adHeadline', 'adDescription', 'adCta', 'sub']) {
+      if (JSON.stringify(a[con.key][f]) !== JSON.stringify(a[con.sameCopyAs][f])) {
+        fails.push(`${a.key}/${con.key} "${f}" no longer matches ${con.sameCopyAs} - the face vs no-face A/B is contaminated`);
+      }
+    }
+    if (JSON.stringify(a[con.key].h) !== JSON.stringify(a[con.sameCopyAs].h)) {
+      fails.push(`${a.key}/${con.key} headline no longer matches ${con.sameCopyAs} - the face vs no-face A/B is contaminated`);
+    }
+  }
+}
+notes.push(`photo A/B pairing: ${paired} photo cut(s) verified word-identical to their no-face parent`);
+
+// 6. credit claim consistency: a lane must not promise credit its label omits
 for (const a of AUDIENCES) {
   for (const c of CONCEPTS) {
     const blob = JSON.stringify(a[c.key]);
