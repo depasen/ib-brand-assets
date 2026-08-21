@@ -10,6 +10,16 @@ const os = require('os');
 const { execFileSync } = require('child_process');
 const { OFFER, AUDIENCES, CONCEPTS, SIZES, fill } = require('./copy.js');
 
+// Resolve every token in a concept block the way the renderer does, so the checks
+// below run against what actually ships rather than the un-filled template.
+const strings = (v) => Array.isArray(v) ? v.flatMap(strings)
+  : (v && typeof v === 'object') ? Object.values(v).flatMap(strings)
+  : typeof v === 'string' ? [v] : [];
+
+const filledDeep = (v, lane) => Array.isArray(v) ? v.map((x) => filledDeep(x, lane))
+  : (v && typeof v === 'object') ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, filledDeep(x, lane)]))
+  : typeof v === 'string' ? fill(v, lane) : v;
+
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'out');
 const fails = [], warns = [], notes = [];
@@ -41,7 +51,7 @@ if (!checker) {
   let pass = 0;
   for (const a of AUDIENCES) for (const c of CONCEPTS) {
     const f = path.join(tmp, `${a.key}_${c.key}.md`);
-    fs.writeFileSync(f, fill(a[c.key].adPrimary) + '\n');
+    fs.writeFileSync(f, fill(a[c.key].adPrimary, a) + '\n');
     try { execFileSync('python3', [checker, f], { stdio: 'pipe' }); pass++; }
     catch (e) {
       const msg = String(e.stdout || '') + String(e.stderr || '');
@@ -100,17 +110,29 @@ for (const con of CONCEPTS.filter((c) => c.sameCopyAs)) {
 }
 notes.push(`photo A/B pairing: ${paired} photo cut(s) verified word-identical to their no-face parent`);
 
-// 6. credit claim consistency: a lane must not promise credit its label omits
+// 6. credit claims must match the switch. With creditClaim 'off' NO ad may mention
+//    credit anywhere - on-image or in an ad field. This is the check that would have
+//    caught the June kit shipping an unverified "CME available" on every ad.
+let credScanned = 0;
 for (const a of AUDIENCES) {
   for (const c of CONCEPTS) {
-    const blob = JSON.stringify(a[c.key]);
-    if (a.credit === 'CME' && /CME\/CE/.test(blob)) fails.push(`${a.key}/${c.key} says CME/CE but the lane is CME-only`);
-    if (a.credit === 'CME/CE' && /\bCME\b(?!\/CE)/.test(blob.replace(/CME\/CE/g, ''))) {
-      fails.push(`${a.key}/${c.key} says bare "CME" but the lane is CME/CE`);
+    // Join the VALUES, never JSON.stringify the object: concept D has a field
+    // literally named `credit` (it holds her byline), and matching on the key name
+    // failed a correct render.
+    const rendered = strings(filledDeep(a[c.key], a)).join(' | ');
+    credScanned++;
+    if (OFFER.creditClaim === 'off') {
+      const hit = rendered.match(/\bCME\b|\bCE\b|\bcredits?\b/i);
+      if (hit) fails.push(`${a.key}/${c.key} still mentions credit ("${hit[0]}") while creditClaim is off`);
+    } else {
+      if (a.credit === 'CME' && /CME\/CE/.test(rendered)) fails.push(`${a.key}/${c.key} says CME/CE but the lane is CME-only`);
+      if (a.credit === 'CME/CE' && /\bCME\b(?!\/CE)/.test(rendered.replace(/CME\/CE/g, ''))) {
+        fails.push(`${a.key}/${c.key} says bare "CME" but the lane is CME/CE`);
+      }
     }
   }
 }
-notes.push(`credit claims: ${AUDIENCES.length * CONCEPTS.length} copy sets checked against their lane's credit line`);
+notes.push(`credit claims: ${credScanned} copy sets checked, switch is "${OFFER.creditClaim}"`);
 
 console.log('IntraBalance Insomnia Masterclass ads — verification\n');
 for (const n of notes) console.log('  ' + n);

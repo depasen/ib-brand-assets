@@ -225,10 +225,10 @@ function G_nativepost(c) {
 const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard, G: G_nativepost };
 
 // Deep-fills every {{TOKEN}} in a concept block.
-function filled(block) {
+function filled(block, lane) {
   const walk = (v) => Array.isArray(v) ? v.map(walk)
     : (v && typeof v === 'object') ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, walk(x)]))
-    : typeof v === 'string' ? fill(v) : v;
+    : typeof v === 'string' ? fill(v, lane) : v;
   return walk(block);
 }
 
@@ -364,7 +364,7 @@ async function launchChromium() {
     const dir = path.join(OUT, aud.key);
     fs.mkdirSync(dir, { recursive: true });
     for (const con of cons) {
-      const block = filled(aud[con.key]);
+      const block = filled(aud[con.key], aud);
       for (const size of SIZES) {
         const page = await ctx.newPage();
         await page.setViewportSize({ width: size.w, height: size.h });

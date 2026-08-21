@@ -64,26 +64,26 @@ for (const aud of AUDIENCES) {
     w('**Primary text**');
     w();
     w('```');
-    w(fill(c.adPrimary));
+    w(fill(c.adPrimary, aud));
     w('```');
     w();
-    w(`**Headline:** ${fill(c.adHeadline)}`);
+    w(`**Headline:** ${fill(c.adHeadline, aud)}`);
     w();
-    w(`**Description:** ${fill(c.adDescription)}`);
+    w(`**Description:** ${fill(c.adDescription, aud)}`);
     w();
     w(`**CTA button:** ${c.adCta}`);
     w();
     w('### On-image text (already rendered into the PNGs)');
     w();
-    if (c.eyebrow) w(`- **Eyebrow:** ${fill(c.eyebrow)}`);
+    if (c.eyebrow) w(`- **Eyebrow:** ${fill(c.eyebrow, aud)}`);
     if (c.kicker) w(`- **Credential:** ${c.kicker} / ${c.kickerSub}`);
-    w(`- **Headline:** ${fill(c.h.lead)} **${fill(c.h.accent)}**  *(second half carries the accent)*`);
-    w(`- **Sub:** ${fill(c.sub)}`);
-    if (c.checks) for (const k of c.checks) w(`- **Check:** ${fill(k).replace(/\*\*/g, '')}`);
-    if (c.chip) w(`- **Chip:** ${fill(c.chip)}`);
-    if (c.strip) w(`- **Strip:** ${fill(c.strip)}`);
-    if (c.credit) w(`- **Credit:** ${fill(c.credit)}`);
-    w(`- **Button:** ${fill(c.button)}`);
+    w(`- **Headline:** ${fill(c.h.lead, aud)} **${fill(c.h.accent, aud)}**  *(second half carries the accent)*`);
+    w(`- **Sub:** ${fill(c.sub, aud)}`);
+    if (c.checks) for (const k of c.checks) w(`- **Check:** ${fill(k, aud).replace(/\*\*/g, '')}`);
+    if (c.chip) w(`- **Chip:** ${fill(c.chip, aud)}`);
+    if (c.strip) w(`- **Strip:** ${fill(c.strip, aud)}`);
+    if (c.credit) w(`- **Credit:** ${fill(c.credit, aud)}`);
+    w(`- **Button:** ${fill(c.button, aud)}`);
     w();
   }
 }

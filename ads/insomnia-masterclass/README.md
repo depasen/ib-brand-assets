@@ -179,15 +179,32 @@ and failed the gate outright on em-dash rate.
   ("do you struggle to sleep") — these target clinicians about the people they care
   for. Only claim the credit that the landing page actually offers each profession.
 
+## Credit is switched OFF
+
+`OFFER.creditClaim` is `'off'`, so **no ad mentions CME, CE or credit anywhere** —
+not on the image, not in the ad fields.
+
+The June kit claimed "CME available" on every ad. Asked to confirm what credit the
+landing page offers each profession, Sandeep replied *"Credit for what?"*, so the
+claim has no verified source. A credit claim in advertising aimed at licensed
+clinicians is a regulated statement; an unverified one does not go out on a deadline.
+
+Turning it back on is one word. Set `creditClaim: 'on'` and re-render — each lane
+already carries the wording it would use (physicians: CME, the other two: CME/CE,
+which is how the corpus describes Learner+ credit for mixed audiences).
+`verify.js` enforces the switch in both directions: with it off, any surviving
+mention of credit fails the build.
+
 ## Still open
 
-1. **Two launch blanks.** `OFFER.time` and `OFFER.regUrl` in `src/copy.js` are
-   placeholders. Fill them, re-render, and `verify.js` will stop saying
-   "NOT launch-ready".
-2. **Credit wording per profession.** Physicians get CME. The other two lanes say
-   CME/CE, which matches how the corpus describes Learner+ credit. Coaches may
-   qualify for neither, which is why credit is never the lead promise in that lane.
-   This must match the landing page before launch.
+1. **One launch blank: the registration URL.** `OFFER.regUrl` in `src/copy.js`. It
+   must be the **clinician** masterclass opt-in page. Two wrong candidates to avoid:
+   `intrabalance.com/register` is CSK enrollment, and
+   `members.intrabalance.com/sleep-masterclass` — the most common masterclass URL in
+   the corpus, 39 hits — is the **consumer** masterclass ("quiet your mind and sleep
+   through the night"), not this one. The live URL is in Meta Ads Manager, which this
+   session has no access to.
+2. **Whether any credit exists at all.** See above.
 3. **The two photo formats that need assets we do not have.**
    - *Split with a clinician photo.* Needs a **licensed stock photo of a clinician**
      — the reference uses a model in scrubs, not the instructor, so this is a stock
@@ -195,9 +212,17 @@ and failed the gate outright on em-dash rate.
    - *Full-bleed environmental portrait.* Needs a **wide photo of Dr. Bhopal in a
      real setting**, roughly 1200px or more. The 350px circular headshot cannot do it.
 
-   `brand-content-images` is the tool that would generate this kind of imagery, but it
-   has style folders for `es` and `pip` only — no `ib` — so an IntraBalance style would
-   have to be built first.
+   `brand-content-images` is the right tool for this and it is already built and
+   shared across the three businesses. Two things stand between it and these images:
+
+   - **No credential in this session.** `generate.py` reads `OPENAI_API_KEY` from the
+     environment or from `~/Documents/Claude/Projects/pip-funnel-report/.env`, and
+     `GEMINI_API_KEY` from the environment or `brand-content-images/.env.gemini`.
+     Neither is set here and neither fallback file exists on this machine — both live
+     on the Mac. Set either key in this session and the generator runs.
+   - **No `ib` style.** `styles/` holds `es` and `pip` only. An IntraBalance style
+     folder needs a `style.txt` and two or three reference images before it will
+     produce anything that looks like IntraBalance rather than generic stock.
 
    The 5.7 MB file in Drive named `Nishi Bhopal_DL.jpg` is **not** a headshot — it is
    a scan of her driver's licence. Do not use it, and do not copy it into any repo.

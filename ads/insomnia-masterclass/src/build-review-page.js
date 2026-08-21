@@ -78,15 +78,15 @@ const card=(a,c)=>{
   const b=a[c.key];
   const imgs=SZ.map((s,i)=>`<img class="shot${i===1?' on':''}" data-sz="${s}" src="${TH[`${a.key}|${c.key}|${s}`]}" alt="${e(a.label)}, ${e(c.name)}, ${SZLABEL[s]}">`).join('');
   const toggle=SZ.map((s,i)=>`<button type="button" class="seg${i===1?' on':''}" data-sz="${s}">${SZLABEL[s]}</button>`).join('');
-  const primary=fill(b.adPrimary);
+  const primary=fill(b.adPrimary, a);
   return `<article class="card">
   <header class="card-hd"><span class="tag${c.photo ? ' tag-photo' : ''}">${c.key}</span><h3>${e(c.name)}${c.photo ? ' <span class="pill">with her photo</span>' : ''}</h3><p class="surface">${e(c.surface)}${c.sameCopyAs ? ` &#183; same words as ${c.sameCopyAs}` : ''}</p></header>
   <div class="card-body">
     <figure class="shots"><div class="stage">${imgs}</div><div class="seg-row" role="group" aria-label="Size">${toggle}</div></figure>
     <div class="fields">
       <div class="field"><div class="flabel">Post text<button type="button" class="copy" data-copy="${e(primary)}">Copy</button></div><pre class="primary">${e(primary)}</pre></div>
-      <div class="field"><div class="flabel">Headline</div><p class="val">${e(fill(b.adHeadline))}</p></div>
-      <div class="field"><div class="flabel">Description</div><p class="val">${e(fill(b.adDescription))}</p></div>
+      <div class="field"><div class="flabel">Headline</div><p class="val">${e(fill(b.adHeadline, a))}</p></div>
+      <div class="field"><div class="flabel">Description</div><p class="val">${e(fill(b.adDescription, a))}</p></div>
       <div class="field"><div class="flabel">Button</div><p class="val"><span class="chip">${e(b.adCta)}</span></p></div>
     </div>
   </div></article>`;
@@ -248,19 +248,20 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:26px 0 56px;
   <dl class="stats">
     <div class="stat"><dt>Ads ready</dt><dd>63</dd></div>
     <div class="stat"><dt>Angles</dt><dd>7<small>4 typographic, 3 with her photo</small></dd></div>
-    <div class="stat"><dt>Class date</dt><dd>Wed, Aug 26<small>five days out</small></dd></div>
-    <div class="stat"><dt>Still blank</dt><dd>2<small>start time, sign-up link</small></dd></div>
+    <div class="stat"><dt>Class</dt><dd>Wed, Aug 26<small>4:00 PM PT</small></dd></div>
+    <div class="stat"><dt>Still blank</dt><dd>1<small>the sign-up link</small></dd></div>
   </dl>
   <div class="decide" id="decisions">
     <div class="decide-hd">What I need from you</div>
     <ol>
-      <li><b>Go or no go for these ads?</b><span class="sub">Nothing is running. Nothing is scheduled. They sit in the brand repo until you say.</span></li>
-      <li><b>What time does the class start, and what is the sign-up link?</b><span class="sub">Both are still blank. It has to be the masterclass sign-up page, not the enrollment page for the six-week program.</span></li>
-      <li><b>Does the sign-up page offer credit to nurse practitioners and psychologists, or only to doctors?</b><span class="sub">The doctor ads say CME. The other two say CME or CE, which is how the credit is described everywhere else. Coaches may get neither, so those ads never lead with it. Whatever the page says is what the ads have to say.</span></li>
+      <li><b>The sign-up link.</b><span class="sub">The only thing still blank. It needs to be the doctors' masterclass page. Not intrabalance.com/register, and not members.intrabalance.com/sleep-masterclass either, which is the public one about quieting your mind. Paste it and everything re-renders in a minute.</span></li>
+      <li><b>Is there any credit for this class?</b><span class="sub">Every mention of CME and CE has been taken out of all 63 ads, because nobody could tell me what credit exists. If it does exist, say so and it goes straight back in.</span></li>
       <li><b>Which photo version do you want to run, if either?</b><span class="sub">Two are built and marked below. Each uses the same words as its no-photo twin, so running the pair tells you what her face is worth and nothing else.</span></li>
       <li><b>Can you send a larger photo of her?</b><span class="sub">The one we hold is small. It is fine at the sizes used here, but too small for the layout that runs her photo down the side of the frame, which is the one the reference ads use.</span></li>
     </ol>
   </div>
+  <p class="note"><b>Time is in.</b> Every ad now reads Wednesday, Aug 26 at 4:00 PM PT.</p>
+  <p class="note"><b>Credit has been taken out.</b> No ad mentions CME or CE anywhere. The old set claimed it on every ad and nobody could point at where that came from, so it is gone until someone confirms it. One word puts it back.</p>
   <p class="note"><b>From your inspiration folder.</b> Three photo formats keep showing up in the ads you saved. One of them I could build today and it is here as G, copied from the eCare ad. The other two need a photo we do not have: one wants a stock picture of a clinician, the other wants a wide shot of you in a real room. Worth knowing: eCare is running a free insomnia webinar with Colleen Carney on <b>August 27th</b>, the day after yours, aimed at the same mental health professionals as our third campaign.</p>
   <p class="note"><b>One thing I did not copy.</b> The eCare picture has a fake row of likes and comments printed into it, so the ad looks like a post 231 people already liked. I left that out. Say the word if you want it.</p>
   <p class="note"><b>On the photo versions.</b> E, F and G carry her portrait. Each is the face version of an ad already in the set, word for word, so a head-to-head between them measures the photograph rather than the writing. That pairing is checked automatically, so it cannot drift.</p>
