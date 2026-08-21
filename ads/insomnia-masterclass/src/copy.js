@@ -403,9 +403,10 @@ for (const a of AUDIENCES) {
           // a half-width column at a readable size - it shrank to 54% and still
           // overflowed. H's sub already names the audience, so the eyebrow is short.
           eyebrow: 'FREE LIVE MASTERCLASS',
-          // Subject sits on the RIGHT of the physicians and allied frames and on the
-          // LEFT of the NP frame, so the type column swaps side to stay off the face.
-          textSide: a.key === 'nps' ? 'right' : 'left' };
+          // Photo right, type left, matching the reference ad exactly. The sources are
+          // centred head-and-shoulders portraits, so the photo column crops
+          // symmetrically and the side no longer has to vary per lane.
+          textSide: 'left' };
   a.G = { ...a.B, portraitName: OFFER.host, portraitCred: 'Sleep specialist and psychiatrist',
           offerLine: { lead: 'Free ', bold: 'Insomnia Masterclass for ' + a.noun + '.', tail: ' ' + OFFER.dateLong } };
 }

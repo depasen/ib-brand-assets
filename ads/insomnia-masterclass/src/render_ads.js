@@ -232,20 +232,19 @@ function G_nativepost(c) {
 // full-width band but 1.5x for a half-width column, and the face is the first thing
 // to soften. Portrait sources are ~848x1264.
 function H_splitphoto(c, size) {
-  const stacked = size.h / size.w > 1.5;          // 9:16 only
   const left = c.textSide === 'left';
   const img = asset(c.photoFile);
-  const photo = stacked
-    ? `<div style="position:absolute;top:0;left:0;right:0;height:42%;background:url('${img}') center 18%/cover no-repeat;"></div>
-       <div style="position:absolute;top:0;left:0;right:0;height:42%;background:linear-gradient(to bottom, rgba(238,255,255,0) 58%, ${LACC} 98%);"></div>`
-    : `<div style="position:absolute;top:0;bottom:0;${left ? 'right' : 'left'}:0;width:56%;background:url('${img}') center/cover no-repeat;"></div>
-       <div style="position:absolute;top:0;bottom:0;${left ? 'right' : 'left'}:0;width:56%;background:linear-gradient(to ${left ? 'left' : 'right'}, rgba(238,255,255,0) 38%, ${LACC} 96%);"></div>`;
+  const edge = left ? 'right' : 'left';
+  // Side split at every size, including 9:16. A full-width horizontal band was tried
+  // there to limit upscaling, and it was worse: the sources are 2:3 portraits and a
+  // 1080x806 band crops them to an extreme close-up of the eyes and nose. A narrow
+  // tall column crops to shoulders instead, which is what a portrait should do. The
+  // ~1.5x upscale that costs is the cheaper defect.
   return {
     bg: LACC, color: NAVY, pad: 74,
-    pattern: photo,
-    stageStyle: stacked
-      ? `top:42%;left:0;right:0;bottom:0;`
-      : `top:0;bottom:0;${left ? 'left' : 'right'}:0;width:52%;`,
+    pattern: `<div style="position:absolute;top:0;bottom:0;${edge}:0;width:56%;background:url('${img}') center 30%/cover no-repeat;"></div>
+       <div style="position:absolute;top:0;bottom:0;${edge}:0;width:56%;background:linear-gradient(to ${left ? 'left' : 'right'}, rgba(238,255,255,0) 38%, ${LACC} 96%);"></div>`,
+    stageStyle: `top:0;bottom:0;${left ? 'left' : 'right'}:0;width:52%;`,
     body: `
       <img src="${asset('logo_color.png')}" style="height:${u(50)};width:auto;align-self:flex-start;">
       <div data-fit-line style="font-family:'Outfit';font-weight:600;letter-spacing:0.13em;font-size:${u(22)};margin-top:${u(30)};white-space:nowrap;">${esc(c.eyebrow)}</div>

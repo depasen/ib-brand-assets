@@ -74,10 +74,17 @@ this mechanically; it is not left to whoever edits next remembering.
 ## The clinician photographs
 
 `brand/photo-physicians.png`, `photo-nps.png`, `photo-allied.png` drive concept H.
-They were **generated on 2026-08-21** with `gemini-3-pro-image` via
-`brand-content-images`, from the IntraBalance style written for that repo. They are
-generic clinicians, deliberately: the reference ad this format copies uses a model,
-not the instructor.
+They were **generated on 2026-08-21** with `gemini-3-pro-image`, **conditioned on the
+clinician photograph cropped out of the Psychiatry Redefined ad** in the Ad
+Inspiration folder. That is the step that mattered. A first batch written from
+`style.txt` alone produced mid-shots of people standing in readable rooms; the
+reference is a tight head-and-shoulders portrait in blown-out window light with
+direct eye contact and a warm open smile. Conditioning on the actual image got that
+in one pass, and the written rules never would have.
+
+The prompt says explicitly not to reproduce the person in the reference — the look is
+copied, the individual is not. They are generic clinicians, deliberately: that
+reference ad uses a model, not the instructor.
 
 Two things follow from them being generated:
 
