@@ -188,7 +188,41 @@ function F_speakercard(c) { // A's words as a webinar speaker announcement, face
   };
 }
 
-const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard };
+
+// G - native post. Modelled on the eCare / Colleen Carney ad in the Ad Inspiration
+// folder: the creative reads as a post, not an ad. Deliberate departures from the
+// other six concepts, each for a reason:
+//   - Headline is Figtree 800, not Syne. The format only works if the type reads like
+//     the platform's own. Figtree is the brand's body face and is neutral enough to
+//     pass; Syne is distinctive and instantly reads "designed ad".
+//   - No pattern, no tinted ground. A plain white card is what a real post looks like.
+//   - Brand colour appears ONLY in the footer bar, exactly as the reference does.
+// What is NOT copied: the reference bakes a fake reaction and comment row into the
+// image. That is invented social proof and it is not in here.
+function G_nativepost(c) {
+  const foot = 150;
+  return {
+    bg: WHITE, color: '#0F1419', pad: 66, footer: foot,
+    pattern: '',
+    body: `
+      <div style="display:flex;align-items:center;gap:${u(22)};">
+        ${portrait(120, LACC)}
+        <div style="min-width:0;">
+          <div style="font-family:'Figtree';font-weight:800;font-size:${u(36)};color:#0F1419;">${esc(c.portraitName)}</div>
+          <div style="font-family:'Figtree';font-weight:500;font-size:${u(27)};color:#65717D;margin-top:${u(3)};">${esc(c.portraitCred)}</div>
+        </div>
+      </div>
+      <div style="font-family:'Figtree';font-weight:800;line-height:1.22;text-wrap:balance;font-size:${u(60)};letter-spacing:-0.6px;color:#0F1419;margin-top:${u(34)};">${esc(c.h.lead)} ${esc(c.h.accent)}</div>
+      <div style="font-family:'Figtree';font-weight:500;font-size:${u(35)};line-height:1.5;color:#3E4B57;margin-top:${u(28)};">${esc(c.sub)}</div>
+      <div style="font-family:'Figtree';font-size:${u(35)};line-height:1.45;color:#0F1419;margin-top:${u(26)};">
+        <span style="font-weight:500;">${esc(c.offerLine.lead)}</span><span style="font-weight:800;">${esc(c.offerLine.bold)}</span><span style="font-weight:500;">${esc(c.offerLine.tail)}</span></div>`,
+    footerHtml: `<div style="position:absolute;left:0;right:0;bottom:0;height:${u(foot)};background:${NAVY};display:flex;align-items:center;justify-content:space-between;padding:0 ${u(52)};">
+        <span style="background:${TEAL};color:${NAVY};font-family:'Syne';font-weight:700;font-size:${u(34)};padding:${u(20)} ${u(42)};border-radius:999px;white-space:nowrap;">${esc(c.button)} ${arrow}</span>
+        <img src="${asset('logo_white.png')}" style="height:${u(46)};width:auto;"></div>`,
+  };
+}
+
+const RENDERERS = { A: A_offerstack, B: B_quotecard, C: C_bigquestion, D: D_statement, E: E_quotecard_photo, F: F_speakercard, G: G_nativepost };
 
 // Deep-fills every {{TOKEN}} in a concept block.
 function filled(block) {
@@ -227,11 +261,21 @@ const HEALTH = () => {
   return Promise.all(bgUrls.map(probe)).then((bg) => ({
     images: Array.from(document.images).map((i) => ({ src: i.currentSrc || i.src, ok: i.naturalWidth > 0 })),
     backgrounds: bgUrls.map((u, i) => ({ src: u, ok: bg[i] })),
-    fonts: {
-      Syne: document.fonts.check("700 90px Syne"),
-      Outfit: document.fonts.check("600 25px Outfit"),
-      Figtree: document.fonts.check("500 34px Figtree"),
-    },
+    // Check the faces this artboard ACTUALLY asks for, at the weight and size it
+    // asks for them. Asserting all three families were applied was wrong: concept G
+    // uses no Outfit by design, so a correct render failed the check. A gate that
+    // fires on a correct render gets switched off.
+    fonts: (() => {
+      const want = new Map();
+      for (const el of document.querySelectorAll('*')) {
+        if (!el.textContent.trim()) continue;
+        const cs = getComputedStyle(el);
+        const fam = cs.fontFamily.split(',')[0].replace(/['"]/g, '').trim();
+        if (!['Syne', 'Outfit', 'Figtree'].includes(fam)) continue;
+        want.set(`${cs.fontWeight} ${Math.round(parseFloat(cs.fontSize))}px ${fam}`, fam);
+      }
+      return [...want.keys()].map((spec) => ({ spec, ok: document.fonts.check(spec) }));
+    })(),
   }));
 };
 
@@ -239,7 +283,8 @@ function assertHealthy(h, label) {
   const bad = [];
   for (const i of h.images) if (!i.ok) bad.push(`image did not load: ${i.src}`);
   for (const b of h.backgrounds) if (!b.ok) bad.push(`background did not load: ${b.src}`);
-  for (const [f, ok] of Object.entries(h.fonts)) if (!ok) bad.push(`font not applied: ${f}`);
+  for (const f of h.fonts) if (!f.ok) bad.push(`font not applied: ${f.spec}`);
+  if (!h.fonts.length) bad.push('no brand typeface used anywhere on the artboard');
   if (!h.images.length) bad.push('no <img> on the artboard, expected the logo');
   if (bad.length) throw new Error(`${label} rendered unbranded:\n  ` + bad.join('\n  '));
 }

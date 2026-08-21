@@ -4,7 +4,7 @@ Facebook and Instagram ads for the free Insomnia Masterclass, built for **three
 clinician audiences**: physicians, nurse practitioners, and psychologists / PAs /
 coaches.
 
-**54 ads: 3 audiences × 6 concepts × 3 sizes.** Four concepts are typographic, two
+**63 ads: 3 audiences × 7 concepts × 3 sizes.** Four concepts are typographic, three
 are photo cuts carrying Dr. Bhopal's portrait. Copy, renderer and rendered PNGs all
 live here.
 
@@ -25,7 +25,7 @@ review.html             generated, gitignored - all 36 ads plus copy on one page
 
 ```bash
 npm install
-node src/render_ads.js      # all 54
+node src/render_ads.js      # all 63
 node src/build-copy-md.js   # regenerate COPY.md
 node src/build-review-page.js  # rebuild the review page
 node src/verify.js          # gate: renders, voice, scope of practice, credit claims
@@ -81,6 +81,10 @@ photograph and nothing else:
 |---|---|---|
 | E — Quote card with portrait | B | White ground, small portrait beside her name, navy CTA bar |
 | F — Speaker card | A | Navy ground, large centred portrait above the headline |
+| G — Native post | B | White card styled as a post, not an ad. Plain-sans headline, navy CTA bar |
+
+B, E and G run the **same words in three treatments**, so that trio is a clean test of
+presentation with copy held constant.
 
 The pairing is enforced: `src/verify.js` fails if anyone edits E's or F's copy away
 from its parent, because a contaminated A/B is worse than no A/B — it still returns a
@@ -92,6 +96,37 @@ is black matte. The renderer scales it 1.16× inside a circular mask to crop the
 without that there is a dark halo inside the ring, which is what the first render did.
 350px is the ceiling: F draws it at 300px and that is about as large as it can go
 before it softens.
+
+## What the Ad Inspiration folder actually contains
+
+18 phone screenshots of competitor ads in Dr. Bhopal's own feed
+(Drive: "Ad Inspiration", owner drbhopal@intrabalance.com). Three photo formats
+recur, and they need different assets:
+
+| Format | Seen in | What it needs |
+|---|---|---|
+| **Native post** — circular headshot, byline, plain-sans headline, dark footer bar with a bright pill CTA | eCare Behavioral Health / Colleen Carney PhD | A small circular headshot. **Buildable now — this is concept G.** |
+| **Split with a clinician photo** — full-bleed photo right, white scrim left, huge condensed hook, CTA as a text line | Psychiatry Redefined, "Scholarships Available" | A licensed stock photo of a clinician. The subject is a model, **not the instructor** |
+| **Full-bleed environmental portrait + pull quote** — dark scrim, huge condensed all-caps quote, name and role beneath | MasterClass (Daniel Pink, Alison Wood Brooks) | A wide environmental photo of Dr. Bhopal, not a headshot |
+
+**The competitor worth knowing about.** eCare Behavioral Health is running a free
+6-hour Insomnia and CBT-I webinar with Colleen E. Carney PhD on **August 27th**, one
+day after ours, targeting "licensed mental health professionals" — the same people as
+our allied lane. 6 CE credits. Their hook is "Hot take: most clinicians are treating
+chronic insomnia with advice built for healthy sleepers."
+
+Two of the references also confirm choices already made here: Psychiatry Redefined
+writes credit as "CE/CMEs" for a mixed audience, and the Rooted PMHNP webinar sells
+NPs on exactly the training-gap framing this kit uses ("the foundations I wish had
+been part of my NP training").
+
+## A judgement call
+
+The eCare creative bakes a **fake engagement row** into the image — reaction icons and
+"Nina and 231 others · 67 comments" — so the ad looks like a post that has already
+been liked 231 times. Concept G copies the layout and does **not** copy that. Invented
+social proof presented as real is a different thing from a native-feeling layout, and
+it is not a call to make silently. If it is wanted, it is Sandeep's to ask for.
 
 ## The copy rules that shaped this
 
@@ -153,10 +188,16 @@ and failed the gate outright on em-dash rate.
    CME/CE, which matches how the corpus describes Learner+ credit. Coaches may
    qualify for neither, which is why credit is never the lead promise in that lane.
    This must match the landing page before launch.
-3. **The split-photo layout.** Not built, and blocked on resolution. It puts the
-   photo down the right ~45% of the frame, which needs roughly 490×1350 on the 4:5;
-   the usable portrait is 350px across. A ≥1200px photo of Dr. Bhopal on a light or
-   neutral background unblocks it, and would also let F draw the portrait larger.
+3. **The two photo formats that need assets we do not have.**
+   - *Split with a clinician photo.* Needs a **licensed stock photo of a clinician**
+     — the reference uses a model in scrubs, not the instructor, so this is a stock
+     purchase rather than a photoshoot.
+   - *Full-bleed environmental portrait.* Needs a **wide photo of Dr. Bhopal in a
+     real setting**, roughly 1200px or more. The 350px circular headshot cannot do it.
+
+   `brand-content-images` is the tool that would generate this kind of imagery, but it
+   has style folders for `es` and `pip` only — no `ib` — so an IntraBalance style would
+   have to be built first.
 
    The 5.7 MB file in Drive named `Nishi Bhopal_DL.jpg` is **not** a headshot — it is
    a scan of her driver's licence. Do not use it, and do not copy it into any repo.

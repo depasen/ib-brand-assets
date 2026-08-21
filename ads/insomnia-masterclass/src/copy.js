@@ -327,6 +327,16 @@ const CONCEPTS = [
   // `sameCopyAs` instead of their own text.
   { key: 'E', slug: 'E_quotecard_photo', name: 'Quote card with portrait', surface: 'White background, circular portrait, navy CTA bar', photo: true, sameCopyAs: 'B' },
   { key: 'F', slug: 'F_speakercard',     name: 'Speaker card',             surface: 'Navy background, portrait above the headline', photo: true, sameCopyAs: 'A' },
+  // G is drawn from the Ad Inspiration folder: the eCare / Colleen Carney ad, which is
+  // a direct competitor running the same offer one day later. Its creative is styled
+  // as a native post rather than an ad - profile row, plain sans headline, dark footer
+  // bar with a bright pill CTA. Same words as B and E, so B / E / G is a clean
+  // three-way test of TREATMENT on identical copy.
+  //
+  // ONE THING FROM THAT REFERENCE IS DELIBERATELY NOT COPIED: it bakes a fake
+  // engagement row into the image ("Nina and 231 others - 67 comments"). That is
+  // invented social proof presented as real. See README "A judgement call".
+  { key: 'G', slug: 'G_nativepost',     name: 'Native post',              surface: 'White card, portrait and byline, plain-sans headline, navy CTA bar', photo: true, sameCopyAs: 'B' },
 ];
 
 const SIZES = [
@@ -340,6 +350,8 @@ const SIZES = [
 for (const a of AUDIENCES) {
   a.E = { ...a.B, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
   a.F = { ...a.A, portraitName: OFFER.host, portraitCred: 'Harvard-trained psychiatrist and sleep specialist' };
+  a.G = { ...a.B, portraitName: OFFER.host, portraitCred: 'Sleep specialist and psychiatrist',
+          offerLine: { lead: 'Free ', bold: 'Insomnia Masterclass for ' + a.noun + '.', tail: ' ' + OFFER.dateLong } };
 }
 
 module.exports = { OFFER, AUDIENCES, CONCEPTS, SIZES, fill };
