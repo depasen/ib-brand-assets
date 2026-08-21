@@ -48,23 +48,23 @@ You did everything your training gave you. The handout, the prescription, the fo
 
 Insomnia is one of the most common complaints you'll see this week, and one of the most frustrating to treat. It doesn't have to be.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Out of Answers for the Patients Who Can't Sleep?
 
-**Description:** Free masterclass for physicians
+**Description:** Free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME
 - **Headline:** Your patients can't sleep. **And you're out of answers.**  *(second half carries the accent)*
 - **Sub:** The most common complaint in your clinic, and the one your training skipped.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -82,14 +82,14 @@ Hot take: we were trained to work up almost everything, except sleep.
 
 When a patient says "I can't sleep", most of us reach for a script, because that is what the training gave us. It's the most common complaint in the clinic and the one medical education runs straight past.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
 
-**Description:** A free masterclass for physicians
+**Description:** A free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
@@ -97,7 +97,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: we were trained to treat almost everything, **except the patient who can't sleep.**  *(second half carries the accent)*
-- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. 
+- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. CME is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -112,14 +112,14 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 ```
 Some patients you can help in a single visit. The ones who can't sleep usually aren't among them, and not because you're missing effort. Nobody taught you how.
 
-This free masterclass changes that. Built for physicians, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+This free masterclass changes that. Built for physicians, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still Writing Scripts for the Patients Who Can't Sleep?
 
-**Description:** Free masterclass for physicians
+**Description:** Free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
@@ -128,7 +128,7 @@ This free masterclass changes that. Built for physicians, led by Dr. Nishi Bhopa
 - **Eyebrow:** THE INSOMNIA MASTERCLASS · FOR PHYSICIANS
 - **Headline:** Still prescribing for **sleep you can't fix?**  *(second half carries the accent)*
 - **Sub:** There's a better way to treat one of the most common complaints in medicine, and it's built for physicians.
-- **Strip:** FREE · DR. NISHI BHOPAL, MD
+- **Strip:** FREE · CME · DR. NISHI BHOPAL, MD
 - **Button:** Save your free seat
 
 ## D — Dark hot take
@@ -142,20 +142,20 @@ This free masterclass changes that. Built for physicians, led by Dr. Nishi Bhopa
 ```
 We work up chest pain. We work up fatigue. But when a patient says "I can't sleep", most of us go straight to a prescription, without ever asking what is driving it.
 
-Insomnia may be the one complaint we treat without diagnosing. This free masterclass, for physicians, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+Insomnia may be the one complaint we treat without diagnosing. This free masterclass, for physicians, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The One Complaint We Treat Without Diagnosing
 
-**Description:** A free masterclass for physicians
+**Description:** A free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE MASTERCLASS · FOR PHYSICIANS
+- **Eyebrow:** FREE MASTERCLASS · CME · FOR PHYSICIANS
 - **Headline:** The one complaint we treat **without diagnosing.**  *(second half carries the accent)*
 - **Sub:** Insomnia is everywhere in your clinic, and the reason the usual fixes keep failing may not be what you think.
 - **Credit:** Dr. Nishi Bhopal, MD
@@ -176,14 +176,14 @@ Hot take: we were trained to work up almost everything, except sleep.
 
 When a patient says "I can't sleep", most of us reach for a script, because that is what the training gave us. It's the most common complaint in the clinic and the one medical education runs straight past.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
 
-**Description:** A free masterclass for physicians
+**Description:** A free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
@@ -191,7 +191,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: we were trained to treat almost everything, **except the patient who can't sleep.**  *(second half carries the accent)*
-- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. 
+- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. CME is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -210,23 +210,23 @@ You did everything your training gave you. The handout, the prescription, the fo
 
 Insomnia is one of the most common complaints you'll see this week, and one of the most frustrating to treat. It doesn't have to be.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for physicians. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Out of Answers for the Patients Who Can't Sleep?
 
-**Description:** Free masterclass for physicians
+**Description:** Free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME
 - **Headline:** Your patients can't sleep. **And you're out of answers.**  *(second half carries the accent)*
 - **Sub:** The most common complaint in your clinic, and the one your training skipped.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -246,14 +246,14 @@ Hot take: we were trained to work up almost everything, except sleep.
 
 When a patient says "I can't sleep", most of us reach for a script, because that is what the training gave us. It's the most common complaint in the clinic and the one medical education runs straight past.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks physicians through a better way. CME is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Patient Who Can't Sleep, and What Training Left Out
 
-**Description:** A free masterclass for physicians
+**Description:** A free masterclass for physicians · CME through Learner+
 
 **CTA button:** Sign Up
 
@@ -261,7 +261,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: we were trained to treat almost everything, **except the patient who can't sleep.**  *(second half carries the accent)*
-- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. 
+- **Sub:** It's the most common complaint in your clinic, and the one your training skipped. A free masterclass for physicians. CME is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -282,23 +282,23 @@ They tell you about the sleep before they tell anyone else. The trouble falling 
 
 And then you're the one holding it, with the same short list of options as everyone else, because sleep is the piece almost every training program runs out of time for.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Sleep Complaint Your Program Had the Least Time For
 
-**Description:** Free masterclass for NPs
+**Description:** Free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME/CE
 - **Headline:** They tell you first. **Nobody taught you what comes next.**  *(second half carries the accent)*
 - **Sub:** Sleep is the complaint that fills your panel, and the one your program had the least time for.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME/CE through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -316,14 +316,14 @@ Hot take: nobody hears about sleep more often than a nurse practitioner, and alm
 
 You have the longest visit, the most trust, and the same short list of options as everyone else. That is not a gap in you. It's a gap in the curriculum.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
 
-**Description:** A free masterclass for NPs
+**Description:** A free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -331,7 +331,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: you see the most tired patients, **and were given the least to work with.**  *(second half carries the accent)*
-- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. 
+- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -346,14 +346,14 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 ```
 Some visits close cleanly. The sleep ones rarely do, and it isn't for lack of time or care. Nobody taught you how.
 
-This free masterclass changes that. Built for nurse practitioners, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+This free masterclass changes that. Built for nurse practitioners, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still Reaching for the Same Short List on Sleep?
 
-**Description:** Free masterclass for NPs
+**Description:** Free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -362,7 +362,7 @@ This free masterclass changes that. Built for nurse practitioners, led by Dr. Ni
 - **Eyebrow:** THE INSOMNIA MASTERCLASS · FOR NURSE PRACTITIONERS
 - **Headline:** Still reaching for **the same short list?**  *(second half carries the accent)*
 - **Sub:** There's a better way to handle one of the most common complaints in your panel, and it's built for nurse practitioners.
-- **Strip:** FREE · DR. NISHI BHOPAL, MD
+- **Strip:** FREE · CME/CE · DR. NISHI BHOPAL, MD
 - **Button:** Save your free seat
 
 ## D — Dark hot take
@@ -376,20 +376,20 @@ This free masterclass changes that. Built for nurse practitioners, led by Dr. Ni
 ```
 We work up the fatigue. We work up the thyroid. But when someone says "I can't sleep", the visit usually ends in a prescription or a sleep hygiene handout, without anyone asking what is driving it.
 
-Insomnia may be the one complaint we hear most and work up least. This free masterclass, for nurse practitioners, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+Insomnia may be the one complaint we hear most and work up least. This free masterclass, for nurse practitioners, is a better way. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Complaint We Hear Most, and Work Up Least
 
-**Description:** A free masterclass for NPs
+**Description:** A free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE MASTERCLASS · FOR NURSE PRACTITIONERS
+- **Eyebrow:** FREE MASTERCLASS · CME/CE · FOR NURSE PRACTITIONERS
 - **Headline:** The complaint we hear most. **And work up least.**  *(second half carries the accent)*
 - **Sub:** Insomnia turns up in nearly every panel, and the reason the usual options keep failing may not be what you think.
 - **Credit:** Dr. Nishi Bhopal, MD
@@ -410,14 +410,14 @@ Hot take: nobody hears about sleep more often than a nurse practitioner, and alm
 
 You have the longest visit, the most trust, and the same short list of options as everyone else. That is not a gap in you. It's a gap in the curriculum.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
 
-**Description:** A free masterclass for NPs
+**Description:** A free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -425,7 +425,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: you see the most tired patients, **and were given the least to work with.**  *(second half carries the accent)*
-- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. 
+- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -444,23 +444,23 @@ They tell you about the sleep before they tell anyone else. The trouble falling 
 
 And then you're the one holding it, with the same short list of options as everyone else, because sleep is the piece almost every training program runs out of time for.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for nurse practitioners. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** The Sleep Complaint Your Program Had the Least Time For
 
-**Description:** Free masterclass for NPs
+**Description:** Free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME/CE
 - **Headline:** They tell you first. **Nobody taught you what comes next.**  *(second half carries the accent)*
 - **Sub:** Sleep is the complaint that fills your panel, and the one your program had the least time for.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME/CE through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -480,14 +480,14 @@ Hot take: nobody hears about sleep more often than a nurse practitioner, and alm
 
 You have the longest visit, the most trust, and the same short list of options as everyone else. That is not a gap in you. It's a gap in the curriculum.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks NPs through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** You See the Most Tired Patients. You Were Given the Least.
 
-**Description:** A free masterclass for NPs
+**Description:** A free masterclass for NPs · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -495,7 +495,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: you see the most tired patients, **and were given the least to work with.**  *(second half carries the accent)*
-- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. 
+- **Sub:** It's the complaint that fills your panel, and the one your program had least time for. A free masterclass for nurse practitioners. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -516,23 +516,23 @@ By the time someone brings their sleep to you, they have usually been round the 
 
 You're who they land with, and often without a prescription pad to fall back on. Which is closer to where the answer actually lives.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** They've Already Tried the Pill. Now What?
 
-**Description:** Free masterclass for psychologists, PAs and coaches
+**Description:** Free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME/CE
 - **Headline:** By the time they reach you, **they've already tried the pill.**  *(second half carries the accent)*
 - **Sub:** Sleep is what they have taken everywhere else first. Now it's in your room.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME/CE through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -550,14 +550,14 @@ Hot take: sleep gets referred out of nearly every room, and it stops in yours.
 
 Psychologists, PAs and coaches end up holding the sleep problem once the handout and the prescription have been tried. Usually with no more training in it than anyone upstream had.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
 
-**Description:** A free masterclass for psychologists, PAs and coaches
+**Description:** A free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -565,7 +565,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: sleep gets referred out of every room, **and it stops in yours.**  *(second half carries the accent)*
-- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. 
+- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -580,14 +580,14 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 ```
 Most things people bring you, you have a way in. Sleep is often the exception, and it isn't for lack of skill. Nobody taught you how.
 
-This free masterclass changes that. Built for psychologists, PAs and coaches, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+This free masterclass changes that. Built for psychologists, PAs and coaches, led by Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Still the Last Stop for the Sleep Nobody Fixed?
 
-**Description:** Free masterclass for psychologists, PAs and coaches
+**Description:** Free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -596,7 +596,7 @@ This free masterclass changes that. Built for psychologists, PAs and coaches, le
 - **Eyebrow:** THE INSOMNIA MASTERCLASS · FOR PSYCHOLOGISTS, PAs & COACHES
 - **Headline:** Still the last stop for **sleep nobody fixed?**  *(second half carries the accent)*
 - **Sub:** There's a better way to work with one of the most common problems people bring you, and it's built for psychologists, PAs and coaches.
-- **Strip:** FREE · DR. NISHI BHOPAL, MD
+- **Strip:** FREE · CME/CE · DR. NISHI BHOPAL, MD
 - **Button:** Save your free seat
 
 ## D — Dark hot take
@@ -610,20 +610,20 @@ This free masterclass changes that. Built for psychologists, PAs and coaches, le
 ```
 Everyone has a fix for sleep. The handout, the pill, the app, the advice about screens. By the time someone brings it to you, they have tried most of them.
 
-Almost nobody asked why they weren't sleeping in the first place. This free masterclass, for psychologists, PAs and coaches, starts there instead. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. 
+Almost nobody asked why they weren't sleeping in the first place. This free masterclass, for psychologists, PAs and coaches, starts there instead. With Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Everyone Has a Fix for Sleep. Almost Nobody Asks Why.
 
-**Description:** A free masterclass for psychologists, PAs and coaches
+**Description:** A free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE MASTERCLASS · FOR PSYCHOLOGISTS, PAs & COACHES
+- **Eyebrow:** FREE MASTERCLASS · CME/CE · FOR PSYCHOLOGISTS, PAs & COACHES
 - **Headline:** Everyone has a fix for sleep. **Almost nobody asks why.**  *(second half carries the accent)*
 - **Sub:** It reaches you already medicated, already advised, and still there. The reason the usual fixes keep failing may not be what you think.
 - **Credit:** Dr. Nishi Bhopal, MD
@@ -644,14 +644,14 @@ Hot take: sleep gets referred out of nearly every room, and it stops in yours.
 
 Psychologists, PAs and coaches end up holding the sleep problem once the handout and the prescription have been tried. Usually with no more training in it than anyone upstream had.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
 
-**Description:** A free masterclass for psychologists, PAs and coaches
+**Description:** A free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -659,7 +659,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: sleep gets referred out of every room, **and it stops in yours.**  *(second half carries the accent)*
-- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. 
+- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 
@@ -678,23 +678,23 @@ By the time someone brings their sleep to you, they have usually been round the 
 
 You're who they land with, and often without a prescription pad to fall back on. Which is closer to where the answer actually lives.
 
-Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. 
+Join Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, for a free masterclass built for psychologists, PAs and coaches. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** They've Already Tried the Pill. Now What?
 
-**Description:** Free masterclass for psychologists, PAs and coaches
+**Description:** Free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
 ### On-image text (already rendered into the PNGs)
 
-- **Eyebrow:** FREE LIVE MASTERCLASS
+- **Eyebrow:** FREE LIVE MASTERCLASS · CME/CE
 - **Headline:** By the time they reach you, **they've already tried the pill.**  *(second half carries the accent)*
 - **Sub:** Sleep is what they have taken everywhere else first. Now it's in your room.
-- **Check:** Live on Zoom
+- **Check:** Live on Zoom, CME/CE through Learner+
 - **Check:** With Dr. Nishi Bhopal, MD · Harvard-trained
 - **Check:** Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Reserve your free seat
@@ -714,14 +714,14 @@ Hot take: sleep gets referred out of nearly every room, and it stops in yours.
 
 Psychologists, PAs and coaches end up holding the sleep problem once the handout and the prescription have been tried. Usually with no more training in it than anyone upstream had.
 
-In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. 
+In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist and sleep specialist, walks through a better way. CME/CE is available through Learner+.
 
 🗓 Wed, Aug 26 · 4:00 PM PT → https://members.intrabalance.com/insomnia
 ```
 
 **Headline:** Sleep Gets Referred Out of Every Room. It Stops With You.
 
-**Description:** A free masterclass for psychologists, PAs and coaches
+**Description:** A free masterclass for psychologists, PAs and coaches · CME/CE through Learner+
 
 **CTA button:** Sign Up
 
@@ -729,7 +729,7 @@ In this free masterclass, Dr. Nishi Bhopal, MD, a Harvard-trained psychiatrist a
 
 - **Credential:** Dr. Nishi Bhopal, MD / Harvard-Trained Psychiatrist · Sleep Specialist
 - **Headline:** Hot take: sleep gets referred out of every room, **and it stops in yours.**  *(second half carries the accent)*
-- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. 
+- **Sub:** It arrives with you after the handout and the pill have already been tried. A free masterclass for psychologists, PAs and coaches. CME/CE is available through Learner+.
 - **Chip:** Live · Wednesday, Aug 26 · 4:00 PM PT
 - **Button:** Claim your free seat
 

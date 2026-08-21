@@ -32,19 +32,22 @@ const OFFER = {
   credentialLong: 'board certified in psychiatry and sleep medicine',
   credentialHook: 'Harvard-trained psychiatrist and sleep specialist',
 
-  // CREDIT IS OFF UNTIL SOMEONE CONFIRMS IT EXISTS.
+  // CREDIT: ON, AND THE WORDING IS LOAD-BEARING. Sandeep, 2026-08-21:
+  // "They can get CME for the class but it's not just given it's through learner plus."
   //
-  // The June kit claimed "{{CRED_AVAIL}}" on every ad. Asked to confirm what credit
-  // the landing page offers each profession, Sandeep replied "Credit for what?" —
-  // so the claim has no verified source. A CME claim in advertising aimed at
-  // licensed clinicians is a regulated statement, and an unverified one is not
-  // something to launch on a deadline.
+  // The June kit's flat "CME available" was wrong in a way that matters: credit is not
+  // granted by attending. Corpus, verbatim: "Educational credits are provided through
+  // Learner+ which is a point of reflection learning platform. This means that whenever
+  // you learn something in the program, you click on the Learner+ link provided." And:
+  // "The number of educational credits you earn depends on how often you choose to
+  // reflect."
   //
-  // Set to 'on' once the landing page is confirmed to offer credit, then re-render.
-  // Each lane already carries the wording it would use (physicians: CME, everyone
-  // else: CME/CE, which is how the corpus describes Learner+ credit for mixed
-  // audiences). Nothing else needs editing.
-  creditClaim: 'off',   // 'on' | 'off'
+  // So every claim here names Learner+ wherever there is room, and none of them
+  // promises a number of credits. Do not shorten these back to "CME available" - that
+  // is the exact claim this wording exists to avoid.
+  //
+  // 'off' strips every mention of credit from all 63 ads; verify.js enforces it.
+  creditClaim: 'on',   // 'on' | 'off'
 };
 
 // {{TIME}} {{DATE}} {{DATE_SHORT}} {{URL}} {{TZ}} are filled by fill() below.
@@ -54,10 +57,12 @@ function fill(s, lane) {
   const on = OFFER.creditClaim === 'on';
   const word = on && lane ? lane.credit : '';
   return String(s)
+    // Short form where space is tight (eyebrow, strip); the Learner+ mechanism is
+    // named everywhere there is room for it. Never "CME available" on its own.
     .replace(/\{\{CRED_DOT\}\}/g, word ? ' \u00b7 ' + word : '')
-    .replace(/\{\{CRED_CHECK\}\}/g, word ? ', **' + word + ' available**' : '')
-    .replace(/\{\{CRED_SENT\}\}/g, word ? word + ' available.' : '')
-    .replace(/\{\{CRED_AVAIL\}\}/g, word ? word + ' available' : '')
+    .replace(/\{\{CRED_CHECK\}\}/g, word ? ', **' + word + ' through Learner+**' : '')
+    .replace(/\{\{CRED_SENT\}\}/g, word ? word + ' is available through Learner+.' : '')
+    .replace(/\{\{CRED_AVAIL\}\}/g, word ? word + ' through Learner+' : '')
     .replace(/\{\{TIME\}\}/g, OFFER.time)
     .replace(/\{\{DATE_SHORT\}\}/g, OFFER.dateShort)
     .replace(/\{\{DATE\}\}/g, OFFER.dateLong)

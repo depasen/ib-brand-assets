@@ -179,19 +179,34 @@ and failed the gate outright on em-dash rate.
   ("do you struggle to sleep") — these target clinicians about the people they care
   for. Only claim the credit that the landing page actually offers each profession.
 
-## There is no CME or CE — settled
+## Credit: CME/CE through Learner+, and the wording matters
 
-`OFFER.creditClaim` is `'off'`, so **no ad mentions CME, CE or credit anywhere** —
-not on the image, not in the ad fields.
+`OFFER.creditClaim` is `'on'`. Sandeep, 2026-08-21: *"They can get CME for the class
+but it's not just given it's through learner plus."*
 
-The June ad kit's brief specified "CME available" on every ad, and that brief was the
-only source for it. Sandeep, asked twice, 2026-08-21: *"Credit for what?"* There is
-none. This is closed, not pending — do not put it back because a document says so.
-`verify.js` enforces it: with the switch off, any surviving mention of credit fails
-the build.
+That makes the June kit's flat **"CME available" wrong in a way that matters** —
+credit is not granted by attending it. Corpus, verbatim:
 
-If credit is ever actually arranged, `creditClaim: 'on'` restores it and each lane
-already carries the wording it would use.
+> Educational credits are provided through Learner+ which is a point of reflection
+> learning platform. This means that whenever you learn something in the program, you
+> click on the Learner+ link provided.
+
+and *"The number of educational credits you earn depends on how often you choose to
+reflect."*
+
+So every claim in these ads **names Learner+ wherever there is room** and **none
+promises a number of credits**:
+
+| Where | Physicians | NPs and allied |
+|---|---|---|
+| Eyebrow / strip (tight) | `· CME` | `· CME/CE` |
+| Checklist | `Live on Zoom, CME through Learner+` | `…CME/CE through Learner+` |
+| Ad description | `· CME through Learner+` | `· CME/CE through Learner+` |
+| Post text | `CME is available through Learner+.` | `CME/CE is available through Learner+.` |
+
+**Do not shorten these back to "CME available."** That is the exact claim this wording
+exists to avoid. Setting `creditClaim: 'off'` strips every mention from all 63 ads;
+`verify.js` enforces the switch in both directions.
 
 ## The registration URL
 
