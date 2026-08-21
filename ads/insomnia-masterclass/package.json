@@ -1,0 +1,14 @@
+{
+  "name": "ib-insomnia-masterclass-ads",
+  "private": true,
+  "description": "IntraBalance Insomnia Masterclass ad renderer - 3 clinician audiences x 4 concepts x 3 sizes",
+  "scripts": {
+    "render": "node src/render_ads.js",
+    "copy": "node src/build-copy-md.js",
+    "verify": "node src/verify.js",
+    "build": "node src/render_ads.js && node src/build-copy-md.js && node src/verify.js"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}
